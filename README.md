@@ -52,3 +52,8 @@ cp -r next-app-1 next-app-2
  ```text
 mv next-app-1 turborepo/apps
  ``` 
+
+11. add Typescript
+ ```text
+yarn workspace next-app-1 add -D typescript @types/react @types/node
+ ``` 
