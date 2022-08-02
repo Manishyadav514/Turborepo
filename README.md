@@ -79,3 +79,23 @@ yarn workspace server add -D typescript @types/node nodemon
     
   } 
  ```
+
+ 13. add eslint config in 
+
+ ```text
+ {
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Server",
+    "extends": "./base.json",
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es6",
+      "noEmit": false,
+      "sourceMap":true
+    }
+    
+  } 
+ ```
+
+
+ yarn workspace eslint-config-custom add @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb eslint-config-airbnb-base eslint-config-airbnb-typescript eslint-plugin-import eslint-plugin-jest eslint-plugin-testing-library
