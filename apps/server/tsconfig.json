@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "rootDir": ".",
+      "outDir":"dist"
+    },
+    "extends":"tsconfig/server.json",
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/**/*", "styles/global.css"],
+    "exclude": ["node_modules", ".next", ".turbo"]
+  }

@@ -62,3 +62,20 @@ yarn workspace next-app-1 add -D typescript @types/react @types/node
  ```text
 yarn workspace server add -D typescript @types/node nodemon
  ``` 
+
+ 13. add to tsconfig/server.json
+
+ ```text
+ {
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Server",
+    "extends": "./base.json",
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es6",
+      "noEmit": false,
+      "sourceMap":true
+    }
+    
+  } 
+ ```

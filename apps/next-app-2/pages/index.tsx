@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
           <a className="text-blue-600" href="https://nextjs.org">
-            Repo 1
+            Repo 2
           </a>
         </h1>
       </main>
