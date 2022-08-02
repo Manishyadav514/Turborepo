@@ -57,3 +57,8 @@ mv next-app-1 turborepo/apps
  ```text
 yarn workspace next-app-1 add -D typescript @types/react @types/node
  ``` 
+
+ 12. create server, add Typescript config and nodemon
+ ```text
+yarn workspace server add -D typescript @types/node nodemon
+ ``` 
