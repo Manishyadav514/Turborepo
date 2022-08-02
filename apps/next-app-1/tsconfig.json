@@ -17,6 +17,6 @@
     "baseUrl":"."
   },
   "extends":"tsconfig/nextjs.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/**/*", "styles/global.css"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/**/*", "styles/global.css", "pages/_app.js"],
   "exclude": ["node_modules", ".next", ".turbo"]
 }

@@ -6,7 +6,7 @@ app.get('/', (req,res)=>{
 })
 
 app.listen(port, ()=>{
-    consolee.log('Sever is listenting at localhost/4000')
+    console.log('Sever is listenting at localhost/4000')
 })
 
 

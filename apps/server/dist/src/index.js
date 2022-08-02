@@ -10,6 +10,6 @@ app.get('/', (req, res) => {
     res.send('Hello from server!');
 });
 app.listen(port, () => {
-    consolee.log('Sever is listenting at localhost/4000');
+    console.log('Sever is listenting at localhost/4000');
 });
 //# sourceMappingURL=index.js.map
