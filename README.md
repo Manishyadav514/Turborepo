@@ -80,22 +80,19 @@ yarn workspace server add -D typescript @types/node nodemon
   } 
  ```
 
- 13. add eslint config in 
-
+ 13. add other eslint dependecies  (eslint-config-custom os name of config in packages)
  ```text
- {
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "Server",
-    "extends": "./base.json",
-    "compilerOptions": {
-      "module": "commonjs",
-      "target": "es6",
-      "noEmit": false,
-      "sourceMap":true
-    }
-    
-  } 
+ yarn workspace eslint-config-custom add @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb eslint-config-airbnb-base eslint-config-airbnb-typescript eslint-plugin-import eslint-plugin-jest eslint-plugin-testing-library
+ ```
+
+  14. add tailwind config to apps workspace
+ ```text
+yarn workspace next-app-1 add -D next-transpile-modules
+ ```
+
+  15. add config tailwind for shared component tailwind
+ ```text
+yarn workspace ui add -D tailwind postcss autoprefixer
  ```
 
 
- yarn workspace eslint-config-custom add @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb eslint-config-airbnb-base eslint-config-airbnb-typescript eslint-plugin-import eslint-plugin-jest eslint-plugin-testing-library

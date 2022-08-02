@@ -1,6 +1,7 @@
 import type { NextPage } from "next"
 import React from 'react'
 import Head from 'next/head'
+import {Button} from "ui"
 
 const Home: NextPage = () => (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
@@ -16,6 +17,7 @@ const Home: NextPage = () => (
           Repo 1
         </a>
       </h1>
+      <Button/>
     </main>
   </div>
   )

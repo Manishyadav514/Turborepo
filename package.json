@@ -34,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/Manishyadav514/Turborepo2/issues"
   },
-  "homepage": "https://github.com/Manishyadav514/Turborepo2#readme"
+  "homepage": "https://github.com/Manishyadav514/Turborepo2#readme",
+  "dependencies": {
+    "ui": "file:packages/ui"
+  }
 }
