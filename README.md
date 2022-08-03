@@ -1,7 +1,7 @@
 # Turborepo starter
+Turborepo is a build system for monorepos that allows you to have faster builds, content-aware hashing, and remote caching. This repository contains two Next apps that share a common Tailwind configuration. Clone this repository and run "yarn run dev" in the root directory. These applications are accessible on ports 3001 and 3002. Additionally, I built a server workspace that can be accessed on port 4000.
 
-
-## command/code
+## command
 
 1. create next turborepo
  ```text
@@ -33,7 +33,7 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 yarn create next-app --example with-tailwindcss with-tailwindcss-app 
  ``` 
 
-7. rename above created project
+7. rename above created project to next-app-1
  ```text
 mv with-tailwindcss-app next-app-1
  ``` 
@@ -62,23 +62,6 @@ yarn workspace next-app-1 add -D typescript @types/react @types/node
  ```text
 yarn workspace server add -D typescript @types/node nodemon
  ``` 
-
- 13. add to tsconfig/server.json
-
- ```text
- {
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "Server",
-    "extends": "./base.json",
-    "compilerOptions": {
-      "module": "commonjs",
-      "target": "es6",
-      "noEmit": false,
-      "sourceMap":true
-    }
-    
-  } 
- ```
 
  13. add other eslint dependecies  (eslint-config-custom os name of config in packages)
  ```text
